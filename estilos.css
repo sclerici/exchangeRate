@@ -1,0 +1,187 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --primary-color: #5fbaa7;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding: 30px;
+}
+
+.subcontainer{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.subcontainer h2{
+    margin-top: 20px;
+    color: var(--primary-color);
+    font-size: 27px;
+}
+
+.subcontainer h3{
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+img{
+    width: 180px;
+    height: 180px;
+}
+
+#amount-one, #amount-two{
+    font-size: 18px;
+}
+
+.exchange-div1{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px 120px;
+    position: relative;
+    bottom: 30px;
+}
+
+select{
+    text-align: center;
+}
+
+select option{
+    background-color: rgb(119, 117, 117);
+    filter: opacity(0.8);
+    color: white;
+    font-size: 15px;
+}
+
+.swap-div{
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    text-align: center;
+}
+
+.exchange-div2{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px 120px;
+    position: relative;
+    margin-top: 30px;
+}
+
+.swap-btn{
+    background-color: var(--primary-color);
+    width: 50px;
+    height: 28px;
+    font-size: 15px;
+    color: #fff;
+    padding: 3px;
+    border-radius: 5px;
+    border: none;
+}
+
+.swap-btn:active{
+    transform: scale(1.1);
+}
+
+.swap-btn:hover{
+    background-color :#51aa97;
+}
+
+select:focus,
+input:focus,
+button:focus {
+  outline: 0;
+}
+
+input {
+    border: 0;
+    background: transparent;
+    font-size: 30px;
+    text-align: right;
+  }
+
+  .rate{
+      font-size: 14px;
+      color: red;
+  }
+
+  footer{
+      font-size: 12px;
+      margin-top: 15px;
+      color: rgb(61, 61, 165);
+      width: 60%;
+  }
+
+  footer p{
+      text-align: center;
+      margin-top: 40px;
+      color: #000;
+  }
+
+  @media screen and (max-width: 468px){
+
+    .exchange-div2{
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 120px;
+        position: relative;
+        margin-top: 30px;
+    }
+
+    .exchange-div1{
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 120px;
+        position: relative;
+        margin-top: 30px;
+    }
+
+      #currency-one{
+          position: relative;
+          right: 100px;
+      }
+
+      #currency-one, #currency-two{
+          font-size: 14px;
+      }
+
+      #amount-one{
+          position: relative;
+          right: 70px;
+      }
+
+      #currency-two{
+        position: relative;
+        right: 100px;
+    }
+
+    #amount-two{
+        position: relative;
+        right: 70px;
+    }
+
+    .swap-btn{
+        height: 30px;
+        padding: 0px;
+    }
+
+    h3{
+        width: 90%;
+        position: relative;
+        text-align: center;
+        left: 15px;
+    }
+
+    footer{
+        width: 80%;
+    }
+   }
